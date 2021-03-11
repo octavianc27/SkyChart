@@ -1,4 +1,4 @@
-slmag = 6.0
+minmag = 6.0
 
 hip = open('hip_main.dat')
 lines = hip.readlines()
@@ -31,7 +31,7 @@ def querryHip():
             pass
 
     for star in stars:
-        if star['mag'] < 6:
+        if star['mag'] < minmag:
             ralist.append(star['ra'])
             declist.append(star['de'])
             maglist.append(10 * 3 ** -star['mag'])
