@@ -1,14 +1,16 @@
-import PyQt5
-import astronomy
 import math
+import sys
+
+import PyQt5
 import matplotlib
 import matplotlib.pyplot as plt
-import sys
 from geopy.geocoders import Nominatim
-from hipparcos import querryHip
-from layout import Ui_MainWindow
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as Canvas
 from matplotlib.figure import Figure
+
+import astronomy
+from hipparcos import querryHip
+from layout import Ui_MainWindow
 
 # tre ca sa mearga
 matplotlib.use('QT5Agg')
@@ -23,8 +25,6 @@ app = PyQt5.QtWidgets.QApplication(sys.argv)
 MainWindow = PyQt5.QtWidgets.QMainWindow()
 ui = Ui_MainWindow()
 ui.setupUi(MainWindow)
-
-location = Null
 
 
 # widgetul pt grafic
