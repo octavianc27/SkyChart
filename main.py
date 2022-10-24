@@ -79,7 +79,8 @@ chartWidget.addWidget(sc)
 
 def reset():
     ui.dateTimeEdit.setDateTime(PyQt5.QtCore.QDateTime.currentDateTime())
-    ui.edit_locatie.setText("Sibiu")
+    ui.edit_locatie.setText("Bucharest")
+    ui.locatie_selectata.setText("Bucharest")
     update_location()
 
 
